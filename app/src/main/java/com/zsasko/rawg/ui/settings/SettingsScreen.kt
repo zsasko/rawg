@@ -36,7 +36,6 @@ fun SettingsScreen(
     TrackScreenViewEvent(screenName = ANALYTICS_SCREEN_SETTINGS)
 
     Scaffold(
-        modifier = Modifier.padding(horizontal = 16.dp),
         topBar = {
             CenterAlignedTopAppBar(
                 title = {
@@ -61,7 +60,8 @@ fun SettingsScreen(
     ) { innerPadding ->
         Column(
             modifier = Modifier
-                .padding(innerPadding)
+                .padding(top = innerPadding.calculateTopPadding())
+                .padding(horizontal = 16.dp)
                 .fillMaxSize()
         ) {
             SettingsClickableItem(
