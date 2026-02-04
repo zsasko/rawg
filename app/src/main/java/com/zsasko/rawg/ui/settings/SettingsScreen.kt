@@ -61,6 +61,7 @@ fun SettingsScreen(
         Column(
             modifier = Modifier
                 .padding(top = innerPadding.calculateTopPadding())
+                .padding(bottom = innerPadding.calculateBottomPadding())
                 .padding(horizontal = 16.dp)
                 .fillMaxSize()
         ) {
