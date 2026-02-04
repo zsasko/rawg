@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>EmptyDefaultConstructor:GameDetailsUiState.kt$GameDetailsUiState$()</ID>
+    <ID>EmptyDefaultConstructor:GameDetailsUiState.kt$GameDetailsUiState.Loading$()</ID>
+    <ID>FunctionNaming:AnalyticsExtensions.kt$@Composable fun TrackScreenViewEvent( screenName: String, analyticsHelper: AnalyticsHelper = LocalAnalyticsHelper.current, )</ID>
+    <ID>FunctionNaming:AppDrawer.kt$@Composable fun AppDrawer( drawerState: DrawerState, currentRoute: NavKey, navigateToHome: () -&gt; Unit, navigateToSettings: () -&gt; Unit, closeDrawer: () -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:AppDrawerLogo.kt$@Composable fun AppDrawerLogo()</ID>
+    <ID>FunctionNaming:AppDrawerLogo.kt$@Preview @Composable private fun AppDrawerLogoPreview()</ID>
+    <ID>FunctionNaming:AppNavRail.kt$@Composable fun AppNavRail( currentRoute: NavKey, navigateToHome: () -&gt; Unit, navigateToSettings: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:AppNavRail.kt$@Preview("Drawer contents") @Preview("Drawer contents (dark)", uiMode = Configuration.UI_MODE_NIGHT_YES) @Composable fun PreviewAppNavRail()</ID>
+    <ID>FunctionNaming:ErrorLayout.kt$@Composable @Preview fun ErrorLayoutPreview()</ID>
+    <ID>FunctionNaming:ErrorLayout.kt$@Composable fun ErrorLayout( modifier: Modifier = Modifier, errorText: String, onReloadDataButtonClicked: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:GameDetailsAdditionalInfoSection.kt$@Composable fun GameDetailsAdditionalInfoSection( game: GameDetailsResponse, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsAdditionalInfoSection.kt$@Preview @Composable private fun GameDetailsAdditionalInfoSectionPreview()</ID>
+    <ID>FunctionNaming:GameDetailsDescriptionSection.kt$@Composable fun GameDetailsDescriptionSection( description: String, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsDescriptionSection.kt$@Preview @Composable private fun GameDetailsStatsRowPreview()</ID>
+    <ID>FunctionNaming:GameDetailsHeaderImageView.kt$@Composable fun GameDetailsHeaderImageView( imageUrl: String?, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsHeaderImageView.kt$@Preview @Composable private fun GameDetailsHeaderImageViewPreview()</ID>
+    <ID>FunctionNaming:GameDetailsInfoRow.kt$@Composable fun GameDetailsInfoRow( label: String, value: String, modifier: Modifier = Modifier, isLink: Boolean = false )</ID>
+    <ID>FunctionNaming:GameDetailsInfoRow.kt$@Preview @Composable private fun GameDetailsInfoRowPreview()</ID>
+    <ID>FunctionNaming:GameDetailsPlatformsSection.kt$@Composable fun GameDetailsPlatformsSection( platforms: List&lt;GameDetailsResponseItemPlatform&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsPlatformsSection.kt$@Preview @Composable private fun GameDetailsPlatformsSectionPreview()</ID>
+    <ID>FunctionNaming:GameDetailsRatingMetacriticSection.kt$@Composable fun GameDetailsRatingMetacriticSection( game: GameDetailsResponse, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsRatingMetacriticSection.kt$@Preview @Composable private fun GameDetailsRatingMetacriticSectionPreview()</ID>
+    <ID>FunctionNaming:GameDetailsRatingsDistributionSection.kt$@Composable fun GameDetailsRatingsDistributionSection( ratings: List&lt;GameResponseItemRating&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsRatingsDistributionSection.kt$@Preview @Composable private fun GameDetailsRatingsDistributionSectionPreview()</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Composable fun GameDetailsContent(game: GameDetailsResponse)</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Composable fun GameDetailsScreen( viewModel: GameDetailsViewModel, showUpButton: Boolean, onUpButtonClicked: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable private fun GameDetailsScreenLayout( showUpButton: Boolean, onUpButtonClicked: () -&gt; Unit, state: GameDetailsUiState, onReloadDataInvoked: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:GameDetailsScreen.kt$@Preview @Composable private fun GameDetailsScreenLayoutPReview()</ID>
+    <ID>FunctionNaming:GameDetailsSocialButton.kt$@Composable fun GameDetailsSocialButton( icon: ImageVector, count: Int, label: String, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsSocialButton.kt$@Preview @Composable fun GameDetailsSocialButtonPreview()</ID>
+    <ID>FunctionNaming:GameDetailsSocialLinksSection.kt$@Composable fun GameDetailsSocialLinksSection( game: GameDetailsResponse, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsSocialLinksSection.kt$@Preview @Composable private fun GameDetailsSocialLinksSectionPreview()</ID>
+    <ID>FunctionNaming:GameDetailsStatItem.kt$@Composable fun GameDetailsStatItem( icon: ImageVector, value: String, label: String, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsStatItem.kt$@Preview @Composable private fun GameDetailsStatItemPreview()</ID>
+    <ID>FunctionNaming:GameDetailsStatsRow.kt$@Composable fun GameDetailsStatsRow( game: GameDetailsResponse, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsStatsRow.kt$@Preview @Composable private fun GameDetailsStatsRowPreview()</ID>
+    <ID>FunctionNaming:GameDetailsTitleSection.kt$@Composable fun GameDetailsTitleSection( game: GameDetailsResponse, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:GameDetailsTitleSection.kt$@Preview @Composable private fun GameDetailsTitleSectionPreview()</ID>
+    <ID>FunctionNaming:GameListItem.kt$@OptIn(ExperimentalFoundationApi::class) @Composable fun GameListItem( game: GameResponseItem, navigateToDetail: (GameResponseItem) -&gt; Unit, modifier: Modifier = Modifier, isOpened: Boolean = false, )</ID>
+    <ID>FunctionNaming:GameListItem.kt$@Preview(showBackground = true) @Composable fun GameListItemPreview()</ID>
+    <ID>FunctionNaming:GamesScreen.kt$@Composable private fun GamesScreenLayout( games: LazyPagingItems&lt;GameResponseItem&gt;?, innerPadding: PaddingValues, onGameClicked: (Int) -&gt; Unit )</ID>
+    <ID>FunctionNaming:GamesScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun GamesScreen( isExpandedScreen: Boolean, viewModel: GamesViewModel = hiltViewModel(), onGameClicked: (Int) -&gt; Unit, openDrawer: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:GamesScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable private fun GamesScreenContent( isExpandedScreen: Boolean, imageListItems: LazyPagingItems&lt;GameResponseItem&gt;?, onReloadDataButtonClicked: () -&gt; Unit, onGameClicked: (Int) -&gt; Unit, openDrawer: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:GamesScreen.kt$@Preview(showBackground = true) @Composable private fun GamesScreenPreview()</ID>
+    <ID>FunctionNaming:LoadingLayout.kt$@Composable fun LoadingLayout(modifier: Modifier = Modifier)</ID>
+    <ID>FunctionNaming:LoadingLayout.kt$@Preview(showBackground = true) @Composable fun LoadingLayoutPreview()</ID>
+    <ID>FunctionNaming:MainNavigator.kt$@Composable fun MainNavigator(innerPadding: PaddingValues)</ID>
+    <ID>FunctionNaming:MainNavigator.kt$@OptIn(ExperimentalMaterial3AdaptiveApi::class) @Composable fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey)</ID>
+    <ID>FunctionNaming:NoGenresSelected.kt$@Composable fun NoGenresSelected()</ID>
+    <ID>FunctionNaming:NoGenresSelected.kt$@Preview @Composable private fun NoGenresSelectedPreview()</ID>
+    <ID>FunctionNaming:SelectGenreListItem.kt$@Composable fun SelectGenreButton(modifier: Modifier = Modifier, selected: Boolean = false)</ID>
+    <ID>FunctionNaming:SelectGenreListItem.kt$@Composable fun SelectGenreListItem( genre: GenreResponseItemChecked, onItemChecked: (GenreResponseItemChecked) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SelectGenreListItem.kt$@Preview(showBackground = true) @Composable fun SelectGenreListItemPreview()</ID>
+    <ID>FunctionNaming:SelectGenreScreen.kt$@Composable private fun SelectGenreScreenLayout( showNextButton: Boolean, successState: SelectGenreUiState.Success, onGenreToggled: (GenreResponseItemChecked) -&gt; Unit, onNextButtonClicked: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:SelectGenreScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SelectGenreScreen( showUpButton: Boolean, showNextButton: Boolean, onUpButtonClicked: () -&gt; Unit, onNextButtonClicked: () -&gt; Unit, viewModel: SelectGenreViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:SelectGenreScreen.kt$@Preview(showBackground = true) @Composable private fun SelectGenreScreenPreview()</ID>
+    <ID>FunctionNaming:SettingsClickableItem.kt$@Composable fun SettingsClickableItem( title: String, subtitle: String, onClick: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SettingsClickableItem.kt$@Preview @Composable fun SettingsClickableItemPreview()</ID>
+    <ID>FunctionNaming:SettingsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SettingsScreen( onSelectGenres: () -&gt; Unit, isExpandedScreen: Boolean, openDrawer: () -&gt; Unit, viewModel: SettingsViewModel = hiltViewModel(), )</ID>
+    <ID>FunctionNaming:SettingsScreen.kt$@Preview(showBackground = true) @Composable private fun SettingsScreenPreview()</ID>
+    <ID>FunctionNaming:SettingsVersionCodeLabel.kt$@Composable fun SettingsVersionCodeLabel()</ID>
+    <ID>FunctionNaming:SettingsVersionCodeLabel.kt$@Preview(showBackground = true) @Composable private fun SettingsVersionCodeLabelPreview()</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun RAWGTheme( darkTheme: Boolean = isSystemInDarkTheme(), // Dynamic color is available on Android 12+ dynamicColor: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>LongMethod:GameDetailsResponse.kt$GameDetailsResponse.Companion$fun createMinimalMock( id: Int = 1, name: String = "Test Game" ): GameDetailsResponse</ID>
+    <ID>LongMethod:GameDetailsScreen.kt$@Composable fun GameDetailsContent(game: GameDetailsResponse)</ID>
+    <ID>LongMethod:MainNavigator.kt$@OptIn(ExperimentalMaterial3AdaptiveApi::class) @Composable fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey)</ID>
+    <ID>LongMethod:SelectGenreScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SelectGenreScreen( showUpButton: Boolean, showNextButton: Boolean, onUpButtonClicked: () -&gt; Unit, onNextButtonClicked: () -&gt; Unit, viewModel: SelectGenreViewModel = hiltViewModel() )</ID>
+    <ID>LongParameterList:AppDrawer.kt$( drawerState: DrawerState, currentRoute: NavKey, navigateToHome: () -&gt; Unit, navigateToSettings: () -&gt; Unit, closeDrawer: () -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>LongParameterList:GameRepository.kt$GameRepository$( selectedGenresFlow: Flow&lt;List&lt;SelectedGenre&gt;&gt;, pageSize: Int, enablePlaceHolders: Boolean, prefetchDistance: Int, initialLoadSize: Int, maxCacheSize: Int )</ID>
+    <ID>MagicNumber:Color.kt$0xFF625b71</ID>
+    <ID>MagicNumber:Color.kt$0xFF6650a4</ID>
+    <ID>MagicNumber:Color.kt$0xFF7D5260</ID>
+    <ID>MagicNumber:Color.kt$0xFFCCC2DC</ID>
+    <ID>MagicNumber:Color.kt$0xFFD0BCFF</ID>
+    <ID>MagicNumber:Color.kt$0xFFEFB8C8</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$0xFF4CAF50</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$0xFFF44336</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$0xFFFFD700</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$0xFFFFEB3B</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$100</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$50</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$74</ID>
+    <ID>MagicNumber:GameDetailsRatingMetacriticSection.kt$75</ID>
+    <ID>MagicNumber:GameDetailsRatingsDistributionSection.kt$0xFF2196F3</ID>
+    <ID>MagicNumber:GameDetailsRatingsDistributionSection.kt$0xFF4CAF50</ID>
+    <ID>MagicNumber:GameDetailsRatingsDistributionSection.kt$0xFFF44336</ID>
+    <ID>MagicNumber:GameDetailsRatingsDistributionSection.kt$0xFFFF9800</ID>
+    <ID>MagicNumber:GameDetailsRatingsDistributionSection.kt$100f</ID>
+    <ID>MagicNumber:GamesScreen.kt$3</ID>
+    <ID>MagicNumber:GamesViewModel.kt$GamesViewModel$5_000</ID>
+    <ID>MagicNumber:InitViewModel.kt$InitViewModel$5_000</ID>
+    <ID>MagicNumber:LayoutUtils.kt$600</ID>
+    <ID>MagicNumber:MainNavigator.kt$0.33</ID>
+    <ID>MagicNumber:SelectGenreViewModel.kt$SelectGenreViewModel$5_000</ID>
+    <ID>MatchingDeclarationName:GameRepositoryTest.kt$GameRepositoryImplTest</ID>
+    <ID>MatchingDeclarationName:GenreRepositoryTest.kt$GenreRepositoryImplTest</ID>
+    <ID>MatchingDeclarationName:SeelctGenreTest.kt$SelectGenreListItemTest</ID>
+    <ID>NewLineAtEndOfFile:ApiKeyInterceptor.kt$com.zsasko.rawg.common.network.ApiKeyInterceptor.kt</ID>
+    <ID>NewLineAtEndOfFile:App.kt$com.zsasko.rawg.App.kt</ID>
+    <ID>NewLineAtEndOfFile:AppDatabase.kt$com.zsasko.rawg.data.db.AppDatabase.kt</ID>
+    <ID>NewLineAtEndOfFile:AppDrawer.kt$com.zsasko.rawg.common.AppDrawer.kt</ID>
+    <ID>NewLineAtEndOfFile:AppDrawerLogo.kt$com.zsasko.rawg.ui.common.AppDrawerLogo.kt</ID>
+    <ID>NewLineAtEndOfFile:Color.kt$com.zsasko.rawg.ui.common.theme.Color.kt</ID>
+    <ID>NewLineAtEndOfFile:CommonModule.kt$com.zsasko.rawg.di.CommonModule.kt</ID>
+    <ID>NewLineAtEndOfFile:Constants.kt$com.zsasko.rawg.common.Constants.kt</ID>
+    <ID>NewLineAtEndOfFile:CustomAnalyticsHelper.kt$com.zsasko.rawg.common.analytics.CustomAnalyticsHelper.kt</ID>
+    <ID>NewLineAtEndOfFile:DatabaseModule.kt$com.zsasko.rawg.di.DatabaseModule.kt</ID>
+    <ID>NewLineAtEndOfFile:DawgApi.kt$com.zsasko.rawg.api.DawgApi.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsAdditionalInfoSection.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsAdditionalInfoSection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsHeaderImageView.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsHeaderImageView.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsPlatformsSection.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsPlatformsSection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsRatingMetacriticSection.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsRatingMetacriticSection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsRatingsDistributionSection.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsRatingsDistributionSection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsResponse.kt$com.zsasko.rawg.data.model.GameDetailsResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsScreen.kt$com.zsasko.rawg.ui.game_details.GameDetailsScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsSocialButton.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsSocialButton.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsSocialLinksSection.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsSocialLinksSection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsStatItem.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsStatItem.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsStatsRow.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsStatsRow.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsTitleSection.kt$com.zsasko.rawg.ui.game_details.views.GameDetailsTitleSection.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsViewModel.kt$com.zsasko.rawg.viewmodel.GameDetailsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GameDetailsViewModelTest.kt$com.zsasko.rawg.viewmodel.GameDetailsViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:GameListItem.kt$com.zsasko.rawg.ui.games.views.GameListItem.kt</ID>
+    <ID>NewLineAtEndOfFile:GameRepository.kt$com.zsasko.rawg.domain.repository.GameRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:GameRepositoryImpl.kt$com.zsasko.rawg.data.repository.GameRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:GameResponse.kt$com.zsasko.rawg.data.model.GameResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:GamesDetailsUiIntent.kt$com.zsasko.rawg.data.intents.GamesDetailsUiIntent.kt</ID>
+    <ID>NewLineAtEndOfFile:GamesPagingSource.kt$com.zsasko.rawg.data.datasource.GamesPagingSource.kt</ID>
+    <ID>NewLineAtEndOfFile:GamesScreen.kt$com.zsasko.rawg.ui.games.GamesScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:GamesUiIntent.kt$com.zsasko.rawg.data.intents.GamesUiIntent.kt</ID>
+    <ID>NewLineAtEndOfFile:GamesViewModel.kt$com.zsasko.rawg.viewmodel.GamesViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GamesViewModelTest.kt$com.zsasko.rawg.viewmodel.GamesViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:GenericPaginatedResponse.kt$com.zsasko.rawg.data.model.GenericPaginatedResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:GenreRepository.kt$com.zsasko.rawg.domain.repository.GenreRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:GenreRepositoryImpl.kt$com.zsasko.rawg.data.repository.GenreRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:GenreResponse.kt$com.zsasko.rawg.data.model.GenreResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:GetGameDetailsUseCase.kt$com.zsasko.rawg.domain.usecase.GetGameDetailsUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetGamesStreamUseCase.kt$com.zsasko.rawg.domain.usecase.GetGamesStreamUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:InitViewModel.kt$com.zsasko.rawg.viewmodel.InitViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:LayoutUtils.kt$com.zsasko.rawg.common.LayoutUtils.kt</ID>
+    <ID>NewLineAtEndOfFile:LoadingLayout.kt$com.zsasko.rawg.ui.common.LoadingLayout.kt</ID>
+    <ID>NewLineAtEndOfFile:NetworkModule.kt$com.zsasko.rawg.di.NetworkModule.kt</ID>
+    <ID>NewLineAtEndOfFile:NetworkResponse.kt$com.zsasko.rawg.data.model.NetworkResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:NoGenresSelected.kt$com.zsasko.rawg.ui.games.views.NoGenresSelected.kt</ID>
+    <ID>NewLineAtEndOfFile:NoGenresSelected.kt$com.zsasko.rawg.ui.select_genre.views.NoGenresSelected.kt</ID>
+    <ID>NewLineAtEndOfFile:RepositoryModule.kt$com.zsasko.rawg.di.RepositoryModule.kt</ID>
+    <ID>NewLineAtEndOfFile:Routes.kt$com.zsasko.rawg.ui.common.navigation.Routes.kt</ID>
+    <ID>NewLineAtEndOfFile:SeelctGenreTest.kt$com.zsasko.rawg.SeelctGenreTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectGenreListItem.kt$com.zsasko.rawg.ui.select_genre.views.SelectGenreListItem.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectGenreScreen.kt$com.zsasko.rawg.ui.select_genre.SelectGenreScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectGenreUiIntent.kt$com.zsasko.rawg.data.intents.SelectGenreUiIntent.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectGenreUiState.kt$com.zsasko.rawg.data.state.SelectGenreUiState.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectGenreViewModel.kt$com.zsasko.rawg.viewmodel.SelectGenreViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectGenreViewModelTest.kt$com.zsasko.rawg.viewmodel.SelectGenreViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectedGenre.kt$com.zsasko.rawg.data.db.SelectedGenre.kt</ID>
+    <ID>NewLineAtEndOfFile:SelectedGenreDao.kt$com.zsasko.rawg.data.db.SelectedGenreDao.kt</ID>
+    <ID>NewLineAtEndOfFile:ServiceModule.kt$com.zsasko.rawg.di.ServiceModule.kt</ID>
+    <ID>NewLineAtEndOfFile:SettingsClickableItem.kt$com.zsasko.rawg.ui.settings.views.SettingsClickableItem.kt</ID>
+    <ID>NewLineAtEndOfFile:SettingsScreen.kt$com.zsasko.rawg.ui.settings.SettingsScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:SettingsVersionCodeLabel.kt$com.zsasko.rawg.ui.settings.views.SettingsVersionCodeLabel.kt</ID>
+    <ID>NewLineAtEndOfFile:SettingsViewModel.kt$com.zsasko.rawg.viewmodel.SettingsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:SplashViewModelTest.kt$com.zsasko.rawg.viewmodel.SplashViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:StringExt.kt$com.zsasko.rawg.ui.common.StringExt.kt</ID>
+    <ID>NewLineAtEndOfFile:Theme.kt$com.zsasko.rawg.ui.common.theme.Theme.kt</ID>
+    <ID>NewLineAtEndOfFile:Type.kt$com.zsasko.rawg.ui.common.theme.Type.kt</ID>
+    <ID>PackageNaming:GameDetailsAdditionalInfoSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsDescriptionSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsHeaderImageView.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsInfoRow.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsPlatformsSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsRatingMetacriticSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsRatingsDistributionSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsScreen.kt$package com.zsasko.rawg.ui.game_details</ID>
+    <ID>PackageNaming:GameDetailsSocialButton.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsSocialLinksSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsStatItem.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsStatsRow.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:GameDetailsTitleSection.kt$package com.zsasko.rawg.ui.game_details.views</ID>
+    <ID>PackageNaming:NoGenresSelected.kt$package com.zsasko.rawg.ui.select_genre.views</ID>
+    <ID>PackageNaming:SelectGenreListItem.kt$package com.zsasko.rawg.ui.select_genre.views</ID>
+    <ID>PackageNaming:SelectGenreScreen.kt$package com.zsasko.rawg.ui.select_genre</ID>
+    <ID>ReturnCount:GamesPagingSource.kt$GamesPagingSource$override suspend fun load(params: LoadParams&lt;Int&gt;): LoadResult&lt;Int, GameResponseItem&gt;</ID>
+    <ID>TooGenericExceptionCaught:GameRepositoryImpl.kt$GameRepositoryImpl$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GamesPagingSource.kt$GamesPagingSource$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GenreRepositoryImpl.kt$GenreRepositoryImpl$e: Exception</ID>
+    <ID>UnusedPrivateMember:AppDrawerLogo.kt$@Preview @Composable private fun AppDrawerLogoPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsAdditionalInfoSection.kt$@Preview @Composable private fun GameDetailsAdditionalInfoSectionPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsDescriptionSection.kt$@Preview @Composable private fun GameDetailsStatsRowPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsHeaderImageView.kt$@Preview @Composable private fun GameDetailsHeaderImageViewPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsInfoRow.kt$@Preview @Composable private fun GameDetailsInfoRowPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsPlatformsSection.kt$@Preview @Composable private fun GameDetailsPlatformsSectionPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsRatingMetacriticSection.kt$@Preview @Composable private fun GameDetailsRatingMetacriticSectionPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsRatingsDistributionSection.kt$@Preview @Composable private fun GameDetailsRatingsDistributionSectionPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsScreen.kt$@Preview @Composable private fun GameDetailsScreenLayoutPReview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsSocialLinksSection.kt$@Preview @Composable private fun GameDetailsSocialLinksSectionPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsStatItem.kt$@Preview @Composable private fun GameDetailsStatItemPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsStatsRow.kt$@Preview @Composable private fun GameDetailsStatsRowPreview()</ID>
+    <ID>UnusedPrivateMember:GameDetailsTitleSection.kt$@Preview @Composable private fun GameDetailsTitleSectionPreview()</ID>
+    <ID>UnusedPrivateMember:GamesScreen.kt$@Preview(showBackground = true) @Composable private fun GamesScreenPreview()</ID>
+    <ID>UnusedPrivateMember:NoGenresSelected.kt$@Preview @Composable private fun NoGenresSelectedPreview()</ID>
+    <ID>UnusedPrivateMember:SelectGenreScreen.kt$@Preview(showBackground = true) @Composable private fun SelectGenreScreenPreview()</ID>
+    <ID>UnusedPrivateMember:SettingsScreen.kt$@Preview(showBackground = true) @Composable private fun SettingsScreenPreview()</ID>
+    <ID>UnusedPrivateMember:SettingsVersionCodeLabel.kt$@Preview(showBackground = true) @Composable private fun SettingsVersionCodeLabelPreview()</ID>
+    <ID>UnusedPrivateProperty:SeelctGenreTest.kt$SelectGenreListItemTest$val mockedGenre = GenreResponseItemChecked( data = GenreResponseItem.makeMock(1, "Action"), isChecked = true )</ID>
+    <ID>UnusedPrivateProperty:SeelctGenreTest.kt$SelectGenreListItemTest$val mockedGenre = GenreResponseItemChecked( data = GenreResponseItem.makeMock(2, "Indie"), isChecked = false )</ID>
+    <ID>UtilityClassWithPublicConstructor:AnalyticsEvent.kt$AnalyticsEvent$ParamKeys</ID>
+    <ID>UtilityClassWithPublicConstructor:AnalyticsEvent.kt$AnalyticsEvent$Types</ID>
+  </CurrentIssues>
+</SmellBaseline>

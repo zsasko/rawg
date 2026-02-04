@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RAWG</string>
+    <string name="error_screen_reload_data_button">Reload Data</string>
+    <string name="home_title">Home</string>
+    <string name="settings_title">Settings</string>
+    <string name="select_genres_title">Genres</string>
+    <string name="select_genres_button_next">Next</string>
+    <string name="settings_select_genres_subtitle">Genres of games used to filter displayed games</string>
+    <string name="settings_app_version_format">App version: %1$s</string>
+    <string name="general_open_navigation_drawer">Open navigation drawer</string>
+
+    <string name="select_genres_toggle_selection">Select/Deselect Genre</string>
+    <string name="general_no_selected_genres">No data. Please select game genre in Settings > Genres.</string>
+    <string name="splash_logo_content_description">RAWG logo</string>
+    <string name="general_game_header_image_content_description">Game header image</string>
+    <string name="general_failed_load_image_content_description">Failed to load image</string>
+
+    <string name="game_details_playtime">Playtime</string>
+    <string name="game_details_playtime_hours">%1$sh</string>
+    <string name="game_details_achievements">Achievements</string>
+    <string name="game_details_screenshots">Screenshots</string>
+    <string name="game_details_videos">Videos</string>
+    <string name="game_details_social_link_reddit">Reddit</string>
+    <string name="game_details_social_link_twitch">Twitch</string>
+    <string name="game_details_social_link_youtube">YouTube</string>
+    <string name="game_details_community">Community</string>
+    <string name="game_details_ratings_distribution">Ratings Distribution</string>
+    <string name="game_details_platforms">Platforms</string>
+    <string name="game_details_about">About</string>
+    <string name="game_details_additional_information">Additional Information</string>
+    <string name="game_details_website">Website</string>
+    <string name="game_details_added_by">Added by</string>
+    <string name="game_details_added_users">%1$s users</string>
+    <string name="game_details_suggestions">Suggestions</string>
+    <string name="game_details_alternative_names">Alternative Names</string>
+    <string name="general_show_less">Show less</string>
+    <string name="general_show_more">Show more</string>
+
+</resources>
