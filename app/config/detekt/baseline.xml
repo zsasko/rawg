@@ -48,8 +48,8 @@
     <ID>FunctionNaming:GamesScreen.kt$@Preview(showBackground = true) @Composable private fun GamesScreenPreview()</ID>
     <ID>FunctionNaming:LoadingLayout.kt$@Composable fun LoadingLayout(modifier: Modifier = Modifier)</ID>
     <ID>FunctionNaming:LoadingLayout.kt$@Preview(showBackground = true) @Composable fun LoadingLayoutPreview()</ID>
-    <ID>FunctionNaming:MainNavigator.kt$@Composable fun MainNavigator(innerPadding: PaddingValues)</ID>
-    <ID>FunctionNaming:MainNavigator.kt$@OptIn(ExperimentalMaterial3AdaptiveApi::class) @Composable fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey)</ID>
+    <ID>FunctionNaming:MainNavigator.kt$@Composable fun MainNavigator()</ID>
+    <ID>FunctionNaming:MainNavigator.kt$@OptIn(ExperimentalMaterial3AdaptiveApi::class, ExperimentalMaterial3Api::class) @Composable fun MainNavigatorWithRoute(firstRoute: NavKey)</ID>
     <ID>FunctionNaming:NoGenresSelected.kt$@Composable fun NoGenresSelected()</ID>
     <ID>FunctionNaming:NoGenresSelected.kt$@Preview @Composable private fun NoGenresSelectedPreview()</ID>
     <ID>FunctionNaming:SelectGenreListItem.kt$@Composable fun SelectGenreButton(modifier: Modifier = Modifier, selected: Boolean = false)</ID>
@@ -67,7 +67,7 @@
     <ID>FunctionNaming:Theme.kt$@Composable fun RAWGTheme( darkTheme: Boolean = isSystemInDarkTheme(), // Dynamic color is available on Android 12+ dynamicColor: Boolean = true, content: @Composable () -&gt; Unit )</ID>
     <ID>LongMethod:GameDetailsResponse.kt$GameDetailsResponse.Companion$fun createMinimalMock( id: Int = 1, name: String = "Test Game" ): GameDetailsResponse</ID>
     <ID>LongMethod:GameDetailsScreen.kt$@Composable fun GameDetailsContent(game: GameDetailsResponse)</ID>
-    <ID>LongMethod:MainNavigator.kt$@OptIn(ExperimentalMaterial3AdaptiveApi::class) @Composable fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey)</ID>
+    <ID>LongMethod:MainNavigator.kt$@OptIn(ExperimentalMaterial3AdaptiveApi::class, ExperimentalMaterial3Api::class) @Composable fun MainNavigatorWithRoute(firstRoute: NavKey)</ID>
     <ID>LongMethod:SelectGenreScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SelectGenreScreen( showUpButton: Boolean, showNextButton: Boolean, onUpButtonClicked: () -&gt; Unit, onNextButtonClicked: () -&gt; Unit, viewModel: SelectGenreViewModel = hiltViewModel() )</ID>
     <ID>LongParameterList:AppDrawer.kt$( drawerState: DrawerState, currentRoute: NavKey, navigateToHome: () -&gt; Unit, navigateToSettings: () -&gt; Unit, closeDrawer: () -&gt; Unit, modifier: Modifier = Modifier, )</ID>
     <ID>LongParameterList:GameRepository.kt$GameRepository$( selectedGenresFlow: Flow&lt;List&lt;SelectedGenre&gt;&gt;, pageSize: Int, enablePlaceHolders: Boolean, prefetchDistance: Int, initialLoadSize: Int, maxCacheSize: Int )</ID>
@@ -98,7 +98,6 @@
     <ID>MagicNumber:SelectGenreViewModel.kt$SelectGenreViewModel$5_000</ID>
     <ID>MatchingDeclarationName:GameRepositoryTest.kt$GameRepositoryImplTest</ID>
     <ID>MatchingDeclarationName:GenreRepositoryTest.kt$GenreRepositoryImplTest</ID>
-    <ID>MatchingDeclarationName:SeelctGenreTest.kt$SelectGenreListItemTest</ID>
     <ID>NewLineAtEndOfFile:ApiKeyInterceptor.kt$com.zsasko.rawg.common.network.ApiKeyInterceptor.kt</ID>
     <ID>NewLineAtEndOfFile:App.kt$com.zsasko.rawg.App.kt</ID>
     <ID>NewLineAtEndOfFile:AppDatabase.kt$com.zsasko.rawg.data.db.AppDatabase.kt</ID>
@@ -149,7 +148,6 @@
     <ID>NewLineAtEndOfFile:NoGenresSelected.kt$com.zsasko.rawg.ui.select_genre.views.NoGenresSelected.kt</ID>
     <ID>NewLineAtEndOfFile:RepositoryModule.kt$com.zsasko.rawg.di.RepositoryModule.kt</ID>
     <ID>NewLineAtEndOfFile:Routes.kt$com.zsasko.rawg.ui.common.navigation.Routes.kt</ID>
-    <ID>NewLineAtEndOfFile:SeelctGenreTest.kt$com.zsasko.rawg.SeelctGenreTest.kt</ID>
     <ID>NewLineAtEndOfFile:SelectGenreListItem.kt$com.zsasko.rawg.ui.select_genre.views.SelectGenreListItem.kt</ID>
     <ID>NewLineAtEndOfFile:SelectGenreScreen.kt$com.zsasko.rawg.ui.select_genre.SelectGenreScreen.kt</ID>
     <ID>NewLineAtEndOfFile:SelectGenreUiIntent.kt$com.zsasko.rawg.data.intents.SelectGenreUiIntent.kt</ID>
@@ -205,8 +203,6 @@
     <ID>UnusedPrivateMember:SelectGenreScreen.kt$@Preview(showBackground = true) @Composable private fun SelectGenreScreenPreview()</ID>
     <ID>UnusedPrivateMember:SettingsScreen.kt$@Preview(showBackground = true) @Composable private fun SettingsScreenPreview()</ID>
     <ID>UnusedPrivateMember:SettingsVersionCodeLabel.kt$@Preview(showBackground = true) @Composable private fun SettingsVersionCodeLabelPreview()</ID>
-    <ID>UnusedPrivateProperty:SeelctGenreTest.kt$SelectGenreListItemTest$val mockedGenre = GenreResponseItemChecked( data = GenreResponseItem.makeMock(1, "Action"), isChecked = true )</ID>
-    <ID>UnusedPrivateProperty:SeelctGenreTest.kt$SelectGenreListItemTest$val mockedGenre = GenreResponseItemChecked( data = GenreResponseItem.makeMock(2, "Indie"), isChecked = false )</ID>
     <ID>UtilityClassWithPublicConstructor:AnalyticsEvent.kt$AnalyticsEvent$ParamKeys</ID>
     <ID>UtilityClassWithPublicConstructor:AnalyticsEvent.kt$AnalyticsEvent$Types</ID>
   </CurrentIssues>

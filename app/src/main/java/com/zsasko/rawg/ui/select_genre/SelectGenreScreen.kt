@@ -76,7 +76,10 @@ fun SelectGenreScreen(
     ) { innerPadding ->
         Column(
             modifier = Modifier
-                .padding(top = innerPadding.calculateTopPadding())
+                .padding(
+                    top = innerPadding.calculateTopPadding(),
+                    bottom = innerPadding.calculateBottomPadding()
+                )
                 .fillMaxSize()
         ) {
 
@@ -120,7 +123,7 @@ private fun SelectGenreScreenLayout(
     onNextButtonClicked: () -> Unit,
 ) {
     val selectedItemCount = successState.genres.count { it.isChecked }
-    Column{
+    Column {
         LazyColumn(modifier = Modifier.weight(1f)) {
             items(
                 items = successState.genres,

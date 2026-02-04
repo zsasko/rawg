@@ -1,11 +1,10 @@
 package com.zsasko.rawg.ui.common.navigation
 
-import android.R.attr.top
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
 import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
@@ -42,7 +41,7 @@ import com.zsasko.rawg.viewmodel.InitViewModel
 import kotlinx.coroutines.launch
 
 @Composable
-fun MainNavigator(innerPadding: PaddingValues) {
+fun MainNavigator() {
     val initViewModel: InitViewModel = hiltViewModel()
     val hasSelectedGenres = initViewModel.hasSelectedGenres.collectAsStateWithLifecycle()
     hasSelectedGenres.value?.let {
@@ -50,15 +49,15 @@ fun MainNavigator(innerPadding: PaddingValues) {
             showUpButton = false,
             showNextButton = true
         )
-        MainNavigatorWithRoute(innerPadding, firstRoute)
+        MainNavigatorWithRoute(firstRoute)
     } ?: run {
         LoadingLayout()
     }
 }
 
-@OptIn(ExperimentalMaterial3AdaptiveApi::class)
+@OptIn(ExperimentalMaterial3AdaptiveApi::class, ExperimentalMaterial3Api::class)
 @Composable
-fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey) {
+fun MainNavigatorWithRoute(firstRoute: NavKey) {
     val coroutineScope = rememberCoroutineScope()
 
     val backStack = rememberNavBackStack(firstRoute)
@@ -73,6 +72,8 @@ fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey) {
     val sizeAwareDrawerState = rememberSizeAwareDrawerState(isTabletLayout)
     val gesturesEnabled =
         currentRoute !is Routes.GameDetails && currentRoute !is Routes.SelectGenres
+
+
 
     ModalNavigationDrawer(
         drawerContent = {
@@ -105,7 +106,6 @@ fun MainNavigatorWithRoute(innerPadding: PaddingValues, firstRoute: NavKey) {
                 )
             }
             NavDisplay(
-                modifier = Modifier.padding(innerPadding),
                 sceneStrategy = listDetailStrategy,
                 backStack = backStack,
                 onBack = { backStack.removeLastOrNull() },
