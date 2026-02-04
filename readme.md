@@ -26,7 +26,7 @@ To run the app, make sure to add a RAWG API key and create a Firebase project (f
 1. Register your account at [RAWG](https://rawg.io) and get an API key.
 2. Add your RAWG API key to `local.properties` (located in the root of the project) under the key `RAWG_API_KEY`, like this:
 
-        gradle RAWG_API_KEY="your_key_here"
+         RAWG_API_KEY="your_key_here"
 
 3. Create a Firebase application and add the property `show_app_version_label` in Firebase RemoteConfig.  
    ![Firebase RemoteConfig](https://raw.githubusercontent.com/zsasko/rawg/main/docs/images/firebase_remote_config.png)
