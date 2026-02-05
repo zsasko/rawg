@@ -62,26 +62,22 @@ fun GamesScreen(
 
     val isTablet = rememberIsTabletLandscape()
     if (isTablet) {
-        LaunchedEffect(games.loadState, selectedGame) {
+        // when data is loaded for the first time, preselect first game
+        LaunchedEffect(games.loadState, selectedGame.value) {
             if (games.loadState.refresh is LoadState.NotLoading &&
                 games.itemCount > 0 &&
                 selectedGame.value == null
             ) {
-                // preselecting first game item and displaying it's content
                 games[0]?.let { firstGame ->
                     viewModel.selectGameId(firstGame.id)
-                    onGameClicked(firstGame.id)
                 }
             }
         }
 
-        LaunchedEffect(selectedGame) {
-            // if already a game has been selected, display it, it can be triggered when tablet
-            // was rotated from portrait to landscape
-            selectedGame.let { game ->
-                game.value?.let {
-                    onGameClicked(it)
-                }
+        // if already a game has been selected, display it
+        LaunchedEffect(selectedGame.value) {
+            selectedGame.value?.let { game ->
+                onGameClicked(game)
             }
         }
     }
@@ -107,7 +103,7 @@ private fun GamesScreenContent(
     imageListItems: LazyPagingItems<GameResponseItem>?,
     onReloadDataButtonClicked: () -> Unit,
     onGameClicked: (Int) -> Unit,
-    openDrawer: () -> Unit,
+    openDrawer: () -> Unit
 ) {
 
     val isLoading =
@@ -208,6 +204,6 @@ private fun GamesScreenPreview() {
     GamesScreenLayout(
         games = fakeGamesFlow.collectAsLazyPagingItems(),
         innerPadding = PaddingValues(0.dp),
-        onGameClicked = {},
+        onGameClicked = {}
     )
 }
