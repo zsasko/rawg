@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "RAWG"
 include(":app")
-include(":baselineprofile")

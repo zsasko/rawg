@@ -39,7 +39,6 @@ class GameRepositoryImpl(
         }
     }
 
-    @OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
     override fun getGamesStream(
         selectedGenresFlow: Flow<List<SelectedGenre>>,
         pageSize: Int,

@@ -13,7 +13,6 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.serialization)
     alias(libs.plugins.google.services)
     alias(libs.plugins.detekt)
-    alias(libs.plugins.baselineprofile)
 }
 
 android {
@@ -76,7 +75,6 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.adaptive.navigation3)
     implementation(libs.androidx.compose.testing)
-    implementation(libs.androidx.benchmark.macro.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation(libs.hilt.android)
@@ -108,7 +106,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-    "baselineProfile"(project(":baselineprofile"))
 }
 
 detekt {
