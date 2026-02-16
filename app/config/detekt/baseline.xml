@@ -44,7 +44,7 @@
     <ID>FunctionNaming:GameListItem.kt$@Preview(showBackground = true) @Composable fun GameListItemPreview()</ID>
     <ID>FunctionNaming:GamesScreen.kt$@Composable private fun GamesScreenLayout( games: LazyPagingItems&lt;GameResponseItem&gt;?, innerPadding: PaddingValues, onGameClicked: (Int) -&gt; Unit )</ID>
     <ID>FunctionNaming:GamesScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun GamesScreen( isExpandedScreen: Boolean, viewModel: GamesViewModel = hiltViewModel(), onGameClicked: (Int) -&gt; Unit, openDrawer: () -&gt; Unit, )</ID>
-    <ID>FunctionNaming:GamesScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable private fun GamesScreenContent( isExpandedScreen: Boolean, imageListItems: LazyPagingItems&lt;GameResponseItem&gt;?, onReloadDataButtonClicked: () -&gt; Unit, onGameClicked: (Int) -&gt; Unit, openDrawer: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:GamesScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable private fun GamesScreenContent( isExpandedScreen: Boolean, imageListItems: LazyPagingItems&lt;GameResponseItem&gt;?, onReloadDataButtonClicked: () -&gt; Unit, onGameClicked: (Int) -&gt; Unit, openDrawer: () -&gt; Unit )</ID>
     <ID>FunctionNaming:GamesScreen.kt$@Preview(showBackground = true) @Composable private fun GamesScreenPreview()</ID>
     <ID>FunctionNaming:LoadingLayout.kt$@Composable fun LoadingLayout(modifier: Modifier = Modifier)</ID>
     <ID>FunctionNaming:LoadingLayout.kt$@Preview(showBackground = true) @Composable fun LoadingLayoutPreview()</ID>

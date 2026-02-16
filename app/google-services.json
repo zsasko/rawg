@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444802091851",
+    "project_id": "rawg-a9b28",
+    "storage_bucket": "rawg-a9b28.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444802091851:android:93c359c8a0db25b20436ce",
+        "android_client_info": {
+          "package_name": "com.zsasko.rawg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3tDO8LJOcNgbuErzWCrSw3DdEilnQkxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
