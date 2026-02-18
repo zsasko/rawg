@@ -6,23 +6,6 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalWindowInfo
 
-//import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
-
-/*
-@Composable
-fun isTabletPortrait(): Boolean {
-    val configuration = LocalConfiguration.current
-    val windowSizeClass = currentWindowAdaptiveInfo().windowSizeClass
-
-    val isPortrait =
-        configuration.orientation == Configuration.ORIENTATION_PORTRAIT
-
-    val isTablet =
-        windowSizeClass.widthSizeClass >= WindowWidthSizeClass.Medium
-
-    return isTablet && isPortrait
-}*/
-
 @Composable
 fun rememberIsTablet(): Boolean {
     val windowInfo = LocalWindowInfo.current
